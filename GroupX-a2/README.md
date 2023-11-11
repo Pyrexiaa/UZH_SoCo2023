@@ -17,7 +17,9 @@ The LGL Interpreter is a simple interpreter for a custom programming language ca
 # More Capabilities
 
 ## 1.1 Implementation
+
 ### 1. Mathematical Operations Functions
+
 ### a. Addition Function _‘do_addition’_
 > This function performs addition on two operands.
 
@@ -95,7 +97,8 @@ Behavior:
 - Returns the result of raising the base to the power of the exponent, rounded to two decimal places.
 
 ### 2. Print Statements
-### a. Printing Function **_‘do_print_**
+
+### a. Printing Function **_‘do_print’_**
 > This function prints a specified value to the console.
 
 Parameters:
@@ -115,7 +118,7 @@ Returns:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- - **_‘args’_** : A list containing two elements - the variable name and the new value.
+- **_‘args’_** : A list containing two elements - the variable name and the new value.
 
 Behavior:
 - It ensures that there are exactly two arguments.
