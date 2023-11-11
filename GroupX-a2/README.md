@@ -107,7 +107,7 @@ Parameters:
 
 Behavior:
 - It ensures that there is exactly one argument.
-- Retrieves the value of the argument by recursively invoking the ‘do’ function.
+- Retrieves the value of the argument by recursively invoking the **_‘do’_** function.
 - Prints the value to the console.
 
 Returns:
@@ -123,7 +123,7 @@ Parameters:
 Behavior:
 - It ensures that there are exactly two arguments.
 - The first argument must be a string representing the variable name.
-- Retrieves the new value by recursively invoking the ‘do’ function on the second argument.
+- Retrieves the new value by recursively invoking the **_‘do’_** function on the second argument.
 - Updates the specified variable in the environment with the new value.
 - Returns the updated value.
 
@@ -272,13 +272,17 @@ To showcase the use of the implemented functionalities, a sample program has bee
 ### Example Program (example_operations.gsc)
 ```
 ["sequential",
-   # Multiplication
-["multiplication", 3, 4],
-# Division
-["division", 3, ["multiplication", 3, 4]],
-# Print Statement
-["print", "This is just a test"],
-# While Loop
+
+    # Multiplication
+    ["multiplication", 3, 4],
+
+    # Division
+    ["division", 3, ["multiplication", 3, 4]],
+
+    # Print Statement
+    ["print", "This is just a test"],
+
+    # While Loop
     ["while_loops", 
         ["sequential",
             ["print", "testing"],
@@ -286,15 +290,16 @@ To showcase the use of the implemented functionalities, a sample program has bee
         ],
         ["set", "n", 1],
         ["n <= 20"]
-],
-# Arrays
-# Create Array, Get Array Value, Set Array Value
+    ],
+
+    # Arrays
+    # Create Array, Get Array Value, Set Array Value
     ["create_array", "name", [2, 4, 5]],
     ["get_array", "name", 1],
-["set_array", "name", 2, 4],
+    ["set_array", "name", 2, 4],
 
-# Dictionaries
-# Create Dictionary, Get Dictionary Value, Set Dictionary Value, Merge Dictionaries
+    # Dictionaries
+    # Create Dictionary, Get Dictionary Value, Set Dictionary Value, Merge Dictionaries
     ["create_dictionary", "name", ["one"], [1]],
     ["get_dictionary_key_value", "name", "one"],
     ["set_dictionary_key_value", "name", "one", 4],
@@ -359,6 +364,7 @@ To test the object system capabilities, a sample program has been created in a f
 ### Example Class Definitions (example_class.gsc)
 ```
  ["sequential",
+
     # Shape Class
     # The **‘Shape’** class serves as the base class for geometric shapes. It includes a constructor and a method to calculate shape density.
     ["create_class", "Shape", "",   ["sequential",
@@ -373,8 +379,9 @@ To test the object system capabilities, a sample program has been created in a f
             ]
         ]
 ],
-# Square Class (Inherits from Shape)
-# The **‘Square’** class inherits from the **‘Shape’** class and introduces additional attributes and methods, such as **‘side’** and **‘square_area’** .
+
+    # Square Class (Inherits from Shape)
+    # The **‘Square’** class inherits from the **‘Shape’** class and introduces additional attributes and methods, such as **‘side’** and **‘square_area’** .
     ["create_class", "Square", "Shape", ["sequential",
                                             ["set", "name", "sq"], 
                                             ["set", "side", 3]
@@ -398,8 +405,9 @@ To test the object system capabilities, a sample program has been created in a f
             ]
         ]
 ],
-# Circle Class (Inherits from Shape)
-# Similar to **‘Square’** , the **‘Circle’** class inherits from **‘Shape’** and introduces attributes like **‘radius’** and methods like **‘circle_area’**.
+
+    # Circle Class (Inherits from Shape)
+    # Similar to **‘Square’** , the **‘Circle’** class inherits from **‘Shape’** and introduces attributes like **‘radius’** and methods like **‘circle_area’**.
     ["create_class", "Circle", "Shape", ["sequential",
                                             ["set", "name", "ci"], 
                                             ["set", "radius", 2]
@@ -430,7 +438,8 @@ To test the object system capabilities, a sample program has been created in a f
             ]
         ] 
 ],
-# Perform an addition operation to demonstrate polymorphism
+
+    # Perform an addition operation to demonstrate polymorphism
     ["addition", ["call_object", "square_density", "Square"], ["call_object", "circle_density", "Circle"]]
 ]
 ```
@@ -443,18 +452,21 @@ python lgl_interpreter.py example_class.gsc
 
 # Tracing
 Tracing is an essential feature for debugging and profiling software. In this enhancement, the LGL interpreter has been augmented to include a tracing functionality. The **‘--trace option’** , when used with the interpreter, logs details about the start and end times of each function into a specified trace file. This feature is implemented using decorators introduced in Chapter 9.
+
 ## 3.1 Logging
 Tracing functionalities have been added to the LGL Interpreter. You can generate a trace file by running a program with the --trace option:
 ```
 python lgl_interpreter.py example_trace.gsc --trace trace_file.log
 ```
 The trace file will contain details about the start and end times of each function call.
+
 ### Trace File Format
 The trace file is in CSV format and contains the following columns:
 - ID: A unique identifier for distinguishing separate calls of the same function.
 - Function Name: The name of the function that was called.
 - Event: Indicates if the function has started (start) or ended (stop).
 - Timestamp: Logs the timestamp of the event.
+- 
 An example trace file (trace_file.log) is shown below:
 ```
 id,function_name,event,timestamp
@@ -467,24 +479,29 @@ id,function_name,event,timestamp
 ```
 
 ## 3.2 Reporting
-A reporting tool has been implemented to analyze the trace file. Run the reporting tool using the following command:
+This reporting tool processes a trace file generated by the LGL interpreter with tracing enabled. It provides an aggregated summary of function calls, including the number of calls, total execution time, and average execution time.
+
+Run the reporting tool using the following command:
 ```
 python reporting.py trace_file.log
 ```
 The tool provides aggregated information on function calls, including the number of calls, total execution time, and average execution time.
+
 ### Reporting Output
 The reporting tool generates a table with the following columns:
 - Function Name: The name of the function.
 - Num. of Calls: The number of times the function was called.
 - Total Time (ms): The total execution time of the function, summed across all executions.
 - Average Time (ms): The average execution time, obtained by dividing the Total Time with the Num. of Calls.
+
 An example reporting output is presented below:
 ```
 | Function Name | Num. of Calls | Total Time (ms) | Average Time (ms)|
 |----------------|---------------|------------------|-------------------|
 | add_cubes      | 1             | 0.812            | 0.812             |
 | get_cube_power | 2             | 0.440            | 0.220             |
-``` 
+```
+
 # Design Decisions
 ## 1. Function Wrapping (@wrap Decorator)
 We adopted a function wrapping approach using the @wrap decorator. This decision was made to implement basic tracing functionalities efficiently. By wrapping each function call, we were able to capture the start and end times, as well as other relevant information, for logging and reporting.
