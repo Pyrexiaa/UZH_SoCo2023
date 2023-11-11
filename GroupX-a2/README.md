@@ -22,8 +22,8 @@ The LGL Interpreter is a simple interpreter for a custom programming language ca
 > This function performs addition on two operands.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements, the left operand, and the right operand.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements, the left operand, and the right operand.
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -34,8 +34,8 @@ Behavior:
 > This function calculates the absolute value of a given number.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing one element, the number for which the absolute value is calculated.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing one element, the number for which the absolute value is calculated.
 
 Behavior:
 - It ensures that there is exactly one argument.
@@ -46,8 +46,8 @@ Behavior:
 > This function performs subtraction on two operands.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements, the left operand, and the right operand.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements, the left operand, and the right operand.
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -58,8 +58,8 @@ Behavior:
 > This function performs multiplication on two operands.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements, the left operand, and the right operand.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements, the left operand, and the right operand.
 
 Behavior:
 - It ensures that there is exactly one argument.
@@ -71,8 +71,8 @@ Behavior:
 > This function performs subtraction on two operands.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements, the numerator (left operand) and the denominator (right operand).
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements, the numerator (left operand) and the denominator (right operand).
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -85,8 +85,8 @@ Behavior:
 > This function calculates the power of one number to another.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements, the base and the exponent.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements, the base and the exponent.
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -99,8 +99,8 @@ Behavior:
 > This function prints a specified value to the console.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing a single argument to be printed.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing a single argument to be printed.
 
 Behavior:
 - It ensures that there is exactly one argument.
@@ -114,8 +114,8 @@ Returns:
 > This function updates the value of a specified variable with a new value.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements - the variable name and the new value.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- - **_‘args’_** : A list containing two elements - the variable name and the new value.
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -131,8 +131,8 @@ Returns:
 > This function evaluates a condition specified in a string format.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A string representing the condition to be evaluated.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A string representing the condition to be evaluated.
 
 Behavior:
 - Strips any leading or trailing whitespaces from the condition string.
@@ -148,8 +148,8 @@ Returns:
 > This function implements a while loop in the LGL language.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing three elements - the starting condition, stopping condition, and the operation.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing three elements - the starting condition, stopping condition, and the operation.
 
 Behavior:
 - Ensures that there are at least three arguments.
@@ -164,8 +164,8 @@ Behavior:
 > Creating a new array of fixed size.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements - the name of the array and the content of the array.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements - the name of the array and the content of the array.
 
 Behavior:
 - Ensures that there are exactly two arguments.
@@ -178,8 +178,8 @@ Behavior:
 > Setting the value at position I of an array to a new value.
 
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing three elements - the name of the array, the index of the array, and the new number to be set.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing three elements - the name of the array, the index of the array, and the new number to be set.
 
 Behavior:
 - Ensures that there are exactly three arguments.
@@ -194,8 +194,8 @@ Behavior:
  > Getting the value at position I of an array.
 
 Parameters:
-**_‘envs’_**: The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements - the name of the array and the index of the array element to retrieve.
+- **_‘envs’_**: The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements - the name of the array and the index of the array element to retrieve.
 
 Behavior:
 - Ensures that there are exactly two arguments.
@@ -209,8 +209,8 @@ Behavior:
  > Creating a new dictionary.
 
 Parameters:
-**_‘envs’_**: The environment or context in which the operation is performed.
-**_‘args’_** : A list containing three elements - the name of the dictionary, the list of keys, and the list of values.
+- **_‘envs’_**: The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing three elements - the name of the dictionary, the list of keys, and the list of values.
 
 Behavior:
 - Ensures that there are exactly three arguments.
@@ -225,8 +225,8 @@ Behavior:
  > Getting the value of a key.
 
 Parameters:
-**_‘envs’_**: The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements - the name of the dictionary and the key whose value is to be retrieved.
+- **_‘envs’_**: The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements - the name of the dictionary and the key whose value is to be retrieved.
 
 Behavior:
 - Ensures that there are exactly two arguments.
@@ -239,8 +239,8 @@ Behavior:
  > Setting the value of a key to a new value.
 
 Parameters:
-**_‘envs’_**: The environment or context in which the operation is performed.
-**_‘args’_** : A list containing three elements - the name of the dictionary, the key to be set, and the new value.
+- **_‘envs’_**: The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing three elements - the name of the dictionary, the key to be set, and the new value.
 
 Behavior:
 - Ensures that there are exactly three arguments.
@@ -255,14 +255,14 @@ Behavior:
  > Merging two dictionaries (using the I operator of Python.
 
 Parameters:
-**_‘envs’_**: The environment or context in which the operation is performed.
-**_‘args’_** : A list containing two elements - the names of the two dictionaries to be merged.
+- **_‘envs’_**: The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing two elements - the names of the two dictionaries to be merged.
 
 Behavior:
 - Ensures that there are exactly two arguments.
-Retrieves the dictionaries to be merged from the environment using the **_‘envs_get’_** function.
-Performs the merge operation using the **_‘|’_** (union) operator.
-Returns the merged dictionary.
+- Retrieves the dictionaries to be merged from the environment using the **_‘envs_get’_** function.
+- Performs the merge operation using the **_‘|’_** (union) operator.
+- Returns the merged dictionary.
 
 ## 1.2 Usage
 To showcase the use of the implemented functionalities, a sample program has been created in a file named example_operations.gsc.
@@ -313,8 +313,8 @@ python lgl_interpreter.py example_operations.gsc
 
 ### Create Class Function **_‘do_create_class’_**
 Parameters:
-**_‘envs’_** : The environment or context in which the operation is performed.
-**_‘args’_** : A list containing four elements - class name, inheritance, constructor, and all methods.
+- **_‘envs’_** : The environment or context in which the operation is performed.
+- **_‘args’_** : A list containing four elements - class name, inheritance, constructor, and all methods.
 
 Behavior:
 - Ensures that there are exactly four arguments.
