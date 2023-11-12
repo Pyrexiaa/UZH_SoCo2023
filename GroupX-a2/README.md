@@ -315,7 +315,7 @@ python lgl_interpreter.py example_operations.gsc
 ### Create Class Function **_‘do_create_class’_**
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing four elements - class name, inheritance, constructor, and all methods.
+- **_‘args’_** : Asserted to four elements - class name, inheritance, constructor, and all methods.
 
 Behavior:
 - Ensures that there are exactly four arguments.
@@ -325,9 +325,8 @@ Behavior:
 - Handles class inheritance by checking if there is a base class specified.
    - If there is a base class, retrieves its environment using **_‘envs_get’_**.
    - Inherits the constructor and functions from the base class to the current class environment.
-- Defines the constructor by executing its code using the **_‘do’_** function and storing the result in the class environment.
-- Defines the class methods by executing their code using the **_‘do’_** function and storing the results in the class environment.
-- If there is a base class, adds the existing functions of the parent class to the child class.
+- Defines the constructor by executing its code using the **_‘do’_** function (set the value) and storing the result in the class environment.
+- If there is a base class, add the existing functions of the parent class to the child class.
 - Executes all the class functions.
 - Returns the result of executing the class functions.
 
@@ -335,21 +334,59 @@ Behavior:
 In the LGL Interpreter, the object system allows for class definition and object instantiation. The **_“do_create_class’_** function is responsible for creating classes. It takes four arguments: class name, inheritance, constructor, and all methods.
 Example:
 ```
-['do_create_class', 'Square', 'Shape', ['square_new', 'name', 'side'], [['square_area', 'thing']]]
+Without Inheritance and Functions:
+["create_class", "Shape", "", ["sequential", ["set", "name", "anyshape"], ["set", "weight", 5]], []]
 ```
 
 ### Single Inheritance
 Single inheritance is achieved by allowing a class to inherit from a single base class. The **_‘do_create_class’_** function handles the inheritance process, copying the constructor and methods from the base class to the derived class.
 Example:
 ```
-['do_create_class', 'Circle', 'Shape', ['circle_new', 'name', 'radius'], [['circle_area', 'thing']]]
+With Inheritance and Functions:
+["create_class", "Shape", "Inhertied_Class",   ["sequential",
+                                        ["set", "name", "anyshape"],
+                                        ["set", "weight", 5]
+                                    ],
+        ["sequential",
+            ["set", "shape_density",
+                ["function", ["weight", "volume"],
+                    ["division", ["call", "weight"], ["call", "volume"]]
+                ]
+            ]
+        ]
+]
 ```
 
 ### Polymorphism
 Polymorphism is supported through the ability to define and execute methods with the same name across different classes. The **_‘do_create_class’_** function allows for the definition and execution of methods within each class.
 Example:
 ```
-['do_create_class', 'Shape', '', ['shape_new', 'name'], [['shape_density', 'thing', 'weight']]]
+Square is inheriting the functions from the "Shape" class and use it
+ 
+["create_class", "Square", "Shape", ["sequential",
+                                            ["set", "name", "sq"], 
+                                            ["set", "side", 3]
+                                        ],
+        ["sequential", 
+            ["set", "square_area",
+                ["function", ["side"],
+                    ["multiplication", ["call", "side"], ["call", "side"]]
+                ]
+            ],
+            ["print", ["apply", "square_area", ["call", "side"]]],
+            ["set", "volume", 
+                ["multiplication", ["call", "side"],
+                    ["multiplication", ["call", "side"], ["call", "side"]]
+                ]
+            ],
+            ["set", "square_density",
+                ["apply", "shape_density", 
+                    ["call", "weight"], ["call", "volume"]
+                ]
+            ]
+        ]
+]
+
 ```
 
 ## 2.2 Usage
@@ -444,7 +481,7 @@ python lgl_interpreter.py example_class.gsc
 ```
 
 # Tracing
-Tracing is an essential feature for debugging and profiling software. In this enhancement, the LGL interpreter has been augmented to include a tracing functionality. The **‘--trace option’** , when used with the interpreter, logs details about the start and end times of each function into a specified trace file. This feature is implemented using decorators introduced in Chapter 9.
+Tracing is an essential feature for debugging and profiling software. In this enhancement, the LGL interpreter has been augmented to include a tracing functionality. The **‘--trace option’** , when used with the interpreter, logs details about the start and end times of each function into a specified trace file. This feature is implemented using decorators (@wrap) introduced in Chapter 9.
 
 ## 3.1 Logging
 Tracing functionalities have been added to the LGL Interpreter. You can generate a trace file by running a program with the --trace option:
@@ -454,25 +491,29 @@ python lgl_interpreter.py example_trace.gsc --trace trace_file.log
 The trace file will contain details about the start and end times of each function call.
 
 ### Trace File Format
-The trace file is in CSV format and contains the following columns:
+The trace file will be generated in file extension of 'log' format and contains the following columns:
 - ID: A unique identifier for distinguishing separate calls of the same function.
 - Function Name: The name of the function that was called.
 - Event: Indicates if the function has started (start) or ended (stop).
 - Timestamp: Logs the timestamp of the event.
-- 
+
 An example trace file (trace_file.log) is shown below:
 ```
-id,function_name,event,timestamp
-358887,add_cubes,start,2023-10-24 19:20:08.045086
-270697,get_cube_power,start,2023-10-24 19:20:08.045279
-270697,get_cube_power,stop,2023-10-24 19:20:08.045657
-137801,get_cube_power,start,2023-10-24 19:20:08.045788
-137801,get_cube_power,stop,2023-10-24 19:20:08.045850
-358887,add_cubes,stop,2023-10-24 19:20:08.045898
+id         function_name        event      timestamp                 
+616106     do                   start      2023-11-12 08:32:40.376222
+892358     envs_set             start      2023-11-12 08:32:40.377222
+892358     envs_set             stop       2023-11-12 08:32:40.377222
+953205     envs_get             start      2023-11-12 08:32:40.377222
+953205     envs_get             stop       2023-11-12 08:32:40.377222
+255781     do                   start      2023-11-12 08:32:40.377222
+255781     do                   stop       2023-11-12 08:32:40.377222
+...
 ```
 
 ## 3.2 Reporting
 This reporting tool processes a trace file generated by the LGL interpreter with tracing enabled. It provides an aggregated summary of function calls, including the number of calls, total execution time, and average execution time.
+It reads the log file with read_fwf functions from the pandas library, following the format used to arrange the log file as shown above.
+After that, it performs a series of operations such as grouping function_names, calculating total time by doing subtraction of the start time from the end time etc.
 
 Run the reporting tool using the following command:
 ```
@@ -489,10 +530,22 @@ The reporting tool generates a table with the following columns:
 
 An example reporting output is presented below:
 ```
-| Function Name | Num. of Calls | Total Time (ms) | Average Time (ms)|
-|----------------|---------------|------------------|-------------------|
-| add_cubes      | 1             | 0.812            | 0.812             |
-| get_cube_power | 2             | 0.440            | 0.220             |
+| Function Name        | Num. of calls   | Total Time (ms)      | Average Time (ms)    |
+|--------------------------------------------------------------------------------------|
+| do                   | 146             | 5.0000               | 0.0342               |
+| do_addition          | 2               | 0.0000               | 0.0000               |
+| do_apply             | 8               | 4.0000               | 0.5000               |
+| do_call              | 40              | 4.0000               | 0.1000               |
+| do_call_object       | 4               | 0.0000               | 0.0000               |
+| do_create_class      | 6               | 4.0000               | 0.6667               |
+| do_division          | 4               | 2.0000               | 0.5000               |
+| do_function          | 6               | 3.0000               | 0.5000               |
+| do_multiplication    | 16              | 3.0000               | 0.1875               |
+| do_print             | 4               | 3.0000               | 0.7500               |
+| do_sequential        | 14              | 4.0000               | 0.2857               |
+| do_set               | 26              | 4.0000               | 0.1538               |
+| envs_get             | 66              | 4.0000               | 0.0606               |
+| envs_set             | 56              | 4.0000               | 0.0714               |
 ```
 
 # Design Decisions
