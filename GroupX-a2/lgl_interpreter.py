@@ -172,7 +172,6 @@ def evaluate_condition(envs, condition):
 def do_while_loops(envs, args):
     assert len(args) >= 3 # starting, stopping condition and operation
     # set the starting variables
-    # TODO: Update the variable in order to stop the while loop
     initial_value = do(envs,args[1])
     assert args[1][0] == "set", "You have not initialize your variable!"
     operation = args[0]
@@ -338,26 +337,26 @@ def main():
     envs = [{}]
     result = do(envs,program)
     print(f"=> {result}")
-    # Redirect standard output to the trace_file.log
-    with open(sys.argv[3], "w") as trace_file:
-        sys.stdout = trace_file
+    if len(sys.argv) > 2:
+        with open(sys.argv[3], "w") as trace_file:
+            sys.stdout = trace_file
 
-        events_list = []
+            events_list = []
 
-        for func_id, info in FUNCTION_CALLS.items():
-            events_list.append((info['start_time'], func_id, 'start', info))
-            events_list.append((info['end_time'], func_id, 'stop', info))
+            for func_id, info in FUNCTION_CALLS.items():
+                events_list.append((info['start_time'], func_id, 'start', info))
+                events_list.append((info['end_time'], func_id, 'stop', info))
 
-        sorted_events = sorted(events_list, key=lambda x: x[0])
+            sorted_events = sorted(events_list, key=lambda x: x[0])
 
-        header = "{:<10} {:<20} {:<10} {:<26}".format("id", "function_name", "event", "timestamp")
-        print(header, file=trace_file)
+            header = "{:<10} {:<20} {:<10} {:<26}".format("id", "function_name", "event", "timestamp")
+            print(header, file=trace_file)
 
-        for event_time, func_id, event_type, info in sorted_events:
-            line = "{:<10} {:<20} {:<10} {:<26}".format(func_id, info['func_name'], event_type, event_time)
-            print(line, file=trace_file)
+            for event_time, func_id, event_type, info in sorted_events:
+                line = "{:<10} {:<20} {:<10} {:<26}".format(func_id, info['func_name'], event_type, event_time)
+                print(line, file=trace_file)
 
-        sys.stdout = sys.__stdout__
+            sys.stdout = sys.__stdout__
 
 
 if __name__ == "__main__":
