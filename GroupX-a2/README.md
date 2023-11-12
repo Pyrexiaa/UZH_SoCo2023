@@ -25,7 +25,7 @@ The LGL Interpreter is a simple interpreter for a custom programming language ca
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements, the left operand, and the right operand.
+- **_‘args’_** : Asserted to two elements, the left operand, and the right operand.
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -37,11 +37,11 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing one element, the number for which the absolute value is calculated.
+- **_‘args’_** : Asserted to one element, the number for which the absolute value is calculated.
 
 Behavior:
 - It ensures that there is exactly one argument.
-- Retrieves the value of the operandby recursively invoking the **_‘do’_** function.
+- Retrieves the value of the operand by recursively invoking the **_‘do’_** function.
 - Returns the absolute value of the operand.
 
 ### c. Subtraction Function _‘do_subtraction’_
@@ -49,7 +49,7 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements, the left operand, and the right operand.
+- **_‘args’_** : Asserted to two elements, the left operand, and the right operand.
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -61,12 +61,12 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements, the left operand, and the right operand.
+- **_‘args’_** : Asserted to two elements.
 
 Behavior:
 - It ensures that there is exactly one argument.
-- Retrieves the value of the operandby recursively invoking the **_‘do’_** function.
-- Ensures that both operands are numeric (either integers or floats).
+- Retrieves the value of the operand by recursively invoking the **_‘do’_** function.
+- Asserted that both operands are numeric instances (either integers or floats).
 - Returns the result of multiplying the left and right operands, rounded to two decimal places.
 
 ### e. Division Function _‘do_division’_
@@ -74,13 +74,13 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements, the numerator (left operand) and the denominator (right operand).
+- **_‘args’_** : Asserted to two elements, the numerator (left operand) and the denominator (right operand).
 
 Behavior:
 - It ensures that there are exactly two arguments.
 - Retrieves the values of the left and right operands by recursively invoking the **_‘do’_** function.
 - Ensures that the denominator is not zero to avoid division by zero.
-- Ensures that both operands are numeric (either integers or floats).
+- Asserted that both operands are numeric instances (either integers or floats).
 - Returns the result of dividing the numerator by the denominator, rounded to two decimal places.
 
 ### f. Power Function _‘do_power’_
@@ -88,12 +88,12 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements, the base and the exponent.
+- **_‘args’_** : Asserted to two elements, the base and the exponent.
 
 Behavior:
 - It ensures that there are exactly two arguments.
 - Retrieves the values of the left and right operands by recursively invoking the **_‘do’_** function.
-- Ensures that both the base and exponent are numeric (either integers or floats).
+- Asserted that both operands are numeric instances (either integers or floats).
 - Returns the result of raising the base to the power of the exponent, rounded to two decimal places.
 
 ### 2. Print Statements
@@ -103,22 +103,21 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing a single argument to be printed.
+- **_‘args’_** : Asserted to only a single argument to be printed.
 
 Behavior:
-- It ensures that there is exactly one argument.
+- It ensures that there is exactly one argument at the end.
 - Retrieves the value of the argument by recursively invoking the **_‘do’_** function.
 - Prints the value to the console.
+- Does not return a value
 
-Returns:
-- None
-
-### b. Variable Update Function **_‘do_update’_**
+### 3. While Loops
+### a. Variable Update Function **_‘do_update’_**
 > This function updates the value of a specified variable with a new value.
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements - the variable name and the new value.
+- **_‘args’_** : Asserted two elements - the variable name and the new value.
 
 Behavior:
 - It ensures that there are exactly two arguments.
@@ -127,32 +126,26 @@ Behavior:
 - Updates the specified variable in the environment with the new value.
 - Returns the updated value.
 
-Returns:
-- Updated value of the specified variable.
-
-### c. Condition Evaluation Function **_‘evaluate_condition’_**
+### b. Condition Evaluation Function **_‘evaluate_condition’_**
 > This function evaluates a condition specified in a string format.
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A string representing the condition to be evaluated.
+- **_‘args’_** : Asserted to a string representing the condition to be evaluated (e.g. n <= 2).
 
 Behavior:
 - Strips any leading or trailing whitespaces from the condition string.
 - Parses the condition string to identify the comparison operation (<=, >=, <, >, ==).
 - Retrieves the variable name and the value from the condition.
 - Performs the specified comparison operation and returns the result.
+- Returns a boolean result of the condition evaluation.
 
-Returns:
-- Boolean result of the condition evaluation.
-
-### 3. While Loops
-### While Loop Function **_‘do_while_loops’_**
+### c. While Loop Function **_‘do_while_loops’_**
 > This function implements a while loop in the LGL language.
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing three elements - the starting condition, stopping condition, and the operation.
+- **_‘args’_** : Asserted to three elements - the starting condition, stopping condition, and the operation.
 
 Behavior:
 - Ensures that there are at least three arguments.
@@ -168,7 +161,7 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements - the name of the array and the content of the array.
+- **_‘args’_** : Asserted to two elements - the name of the array and the content of the array.
 
 Behavior:
 - Ensures that there are exactly two arguments.
@@ -182,7 +175,7 @@ Behavior:
 
 Parameters:
 - **_‘envs’_** : The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing three elements - the name of the array, the index of the array, and the new number to be set.
+- **_‘args’_** : Asserted to three elements - the name of the array, the index of the array, and the new number to be set.
 
 Behavior:
 - Ensures that there are exactly three arguments.
@@ -194,11 +187,11 @@ Behavior:
 - Returns the modified array.
 
 ### c. Get Array Element Function **_‘do_get_array’_**
- > Getting the value at position I of an array.
+ > Getting the value at position i of an array.
 
 Parameters:
 - **_‘envs’_**: The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements - the name of the array and the index of the array element to retrieve.
+- **_‘args’_** : Asserted to two elements - the name of the array and the index of the array element to retrieve.
 
 Behavior:
 - Ensures that there are exactly two arguments.
@@ -213,7 +206,7 @@ Behavior:
 
 Parameters:
 - **_‘envs’_**: The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing three elements - the name of the dictionary, the list of keys, and the list of values.
+- **_‘args’_** : Asserted to three elements - the name of the dictionary, the list of keys, and the list of values.
 
 Behavior:
 - Ensures that there are exactly three arguments.
@@ -229,7 +222,7 @@ Behavior:
 
 Parameters:
 - **_‘envs’_**: The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements - the name of the dictionary and the key whose value is to be retrieved.
+- **_‘args’_** : Asserted to two elements - the name of the dictionary and the key whose value is to be retrieved.
 
 Behavior:
 - Ensures that there are exactly two arguments.
@@ -243,7 +236,7 @@ Behavior:
 
 Parameters:
 - **_‘envs’_**: The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing three elements - the name of the dictionary, the key to be set, and the new value.
+- **_‘args’_** : Asserted to three elements - the name of the dictionary, the key to be set, and the new value.
 
 Behavior:
 - Ensures that there are exactly three arguments.
@@ -255,11 +248,11 @@ Behavior:
 - Returns the modified dictionary.
 
 ### d. Merge Dictionaries Function **_‘do_merge_dictionary’_**
- > Merging two dictionaries (using the I operator of Python.
+ > Merging two dictionaries (using the | operator).
 
 Parameters:
 - **_‘envs’_**: The environment or context in which the operation is performed.
-- **_‘args’_** : A list containing two elements - the names of the two dictionaries to be merged.
+- **_‘args’_** : Asserted to containing two elements - the names of the two dictionaries to be merged.
 
 Behavior:
 - Ensures that there are exactly two arguments.
