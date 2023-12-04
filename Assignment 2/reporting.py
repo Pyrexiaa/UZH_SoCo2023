@@ -14,7 +14,7 @@ def print_formatted_table(dataframe):
         print(row_str)
 
 def main():
-    assert len(sys.argv) == 2, "Usage: lgl_interpreter.py trace_file.log"
+    assert len(sys.argv) == 2, "Usage: reporting.py trace_file.log"
     col_widths = [10, 20, 10, 26]
     df = pd.read_fwf(sys.argv[1], widths=col_widths, skiprows=1,header=None, names=['id', 'function_name', 'event', 'timestamp'])
     df['timestamp'] = pd.to_datetime(df['timestamp'])
