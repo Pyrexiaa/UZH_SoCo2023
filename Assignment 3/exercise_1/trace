@@ -1,0 +1,562 @@
+versions pytest-7.1.2, python-3.11.5.final.0
+cwd=C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1
+args=('--debug=trace',)
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x000001DAC51A7550>
+    pytest_plugin_registered [hook]
+        plugin: <Session exercise_1 exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x000001DAC51A7550>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001DAC61AD190>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001DAC61AD5D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: pdb [assertion]
+    early skip of rewriting module: cmd [assertion]
+    early skip of rewriting module: code [assertion]
+    early skip of rewriting module: codeop [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001DAC51A7550>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\python_path.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'anyio.pytest_plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\anyio\\pytest_plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'faker.contrib.pytest.plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\faker\\contrib\\pytest\\plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_cov.plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\pytest_cov\\plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_localserver.plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\pytest_localserver\\plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=8 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001DAC616F450>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=10 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001DAC617BA50>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=6 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='cp1252'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001DAC61AD190>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001DAC61AD5D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001DAC61AE2D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001DAC61AE290>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001DAC51A7550>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\python_path.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\asus\\anaconda3\\envs\\uzh\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'anyio.pytest_plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\anyio\\pytest_plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'faker.contrib.pytest.plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\faker\\contrib\\pytest\\plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_cov.plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\pytest_cov\\plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_localserver.plugin' from 'C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\pytest_localserver\\plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=8 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001DAC616F450>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=10 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001DAC617BA50>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=6 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='cp1252'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001DAC61AD190>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001DAC61AD5D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001DAC61AE2D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001DAC61AE290>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x000001DAC61D3E50>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001DAC4B5BB90>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x000001DAC51A7550>
+          start_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1
+          startdir: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1
+      early skip of rewriting module: email.parser [assertion]
+      early skip of rewriting module: email.feedparser [assertion]
+      finish pytest_report_header --> [['rootdir: C:\\Users\\asus\\Desktop\\UZH_SoCo2023\\Assignment 3\\exercise_1', 'plugins: anyio-3.6.2, Faker-18.9.0, cov-3.0.0, localserver-0.5.0'], ['using: pytest-7.1.2', 'setuptools registered plugins:', '  anyio-3.6.2 at C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\anyio\\pytest_plugin.py', '  Faker-18.9.0 at C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\faker\\contrib\\pytest\\plugin.py', '  pytest-cov-3.0.0 at C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\pytest_cov\\plugin.py', '  pytest-localserver-0.5.0 at C:\\Users\\asus\\AppData\\Roaming\\Python\\Python311\\site-packages\\pytest_localserver\\plugin.py']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    perform_collect <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0> ['C:\\Users\\asus\\Desktop\\UZH_SoCo2023\\Assignment 3\\exercise_1'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        processing argument (WindowsPath('C:/Users/asus/Desktop/UZH_SoCo2023/Assignment 3/exercise_1'), []) [collection]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\.coverage
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\.coverage
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\.coverage
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\.coverage
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1.as
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1.as
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1.as
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1.as
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_assembler_output.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_assembler_output.mx
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_assembler_output.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_assembler_output.mx
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_output.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_output.mx
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_output.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_output.mx
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_vm_output.txt
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_vm_output.txt
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_vm_output.txt
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_expected_vm_output.txt
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_instruction_not_found.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_instruction_not_found.mx
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_instruction_not_found.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_instruction_not_found.mx
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.as
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.as
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.as
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.as
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.mx
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.mx
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\exercise1_test_out_of_memory.mx
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_functions.py
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_functions.py
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_functions.py
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_functions.py
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_run_script.py
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_run_script.py
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_run_script.py
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\pytest_run_script.py
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\trace
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\trace
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\trace
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\trace
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001DAC51A7550>
+                collection_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\.pytest_cache
+                path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1\.pytest_cache
+            finish pytest_ignore_collect --> None [hook]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=0 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=0 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          config: <_pytest.config.Config object at 0x000001DAC51A7550>
+          items: []
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x000001DAC51A7550>
+            items: []
+            start_path: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1
+            startdir: C:\Users\asus\Desktop\UZH_SoCo2023\Assignment 3\exercise_1
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> None [hook]
+    pytest_runtestloop [hook]
+        session: <Session exercise_1 exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    finish pytest_runtestloop --> True [hook]
+    pytest_sessionfinish [hook]
+        session: <Session exercise_1 exitstatus=<ExitCode.NO_TESTS_COLLECTED: 5> testsfailed=0 testscollected=0>
+        exitstatus: 5
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x000001DAC61AE2D0>
+          exitstatus: 5
+          config: <_pytest.config.Config object at 0x000001DAC51A7550>
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x000001DAC51A7550>
+    finish pytest_unconfigure --> [] [hook]
