@@ -37,6 +37,11 @@ class VirtualMachineExtend(VirtualMachineStep):
                 command = command.strip()
                 if not command:
                     continue
+                elif len(command.split()) == 1 and command.isdigit():
+                    command = str(command)
+                    command = int(command.zfill(6))
+                    self._do_show_memory_range(command)
+
                 elif len(command.split()) == 1 and isinstance(command, str):
                     # Search according to name sequence first
                     for func_name in self.functions:
@@ -73,10 +78,6 @@ class VirtualMachineExtend(VirtualMachineStep):
                             self.first_input = first
                             self.second_input = f"{int(second.zfill(6))}"
                             return True
-                    else:
-                        assert isinstance(command, int), "Memory address has to be an integer"
-                        command = int(command.zfill(6))
-                        self._do_show_memory_range(command)
                 # elif command not in self.handlers:
                 #     self.write(f"Unknown command {command}")
                 # else:
