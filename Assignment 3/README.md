@@ -37,7 +37,7 @@ The project structure is organized as follows:
   - `exercise1_assembler_output.mx`: Expected machine code output for the sample assembly program.
   - `exercise1_expected_output.mx`: Expected output for the Virtual Machine when executing the sample program.
   - `exercise1_expected_vm_output.txt`: Expected output for the Virtual Machine.
-  - `exercise1_test_instruction_not_found.mx`: Test case for an unknown instruction scenario.
+  - `exercise1_test_instruction_not_found.mx`: ？？？
   - `exercise1_test_out_of_memory.as`: Test case for an out-of-memory scenario.
   - `exercise1_test_out_of_memory.mx`: Expected output for the out-of-memory test.
   - `test_run_script.py`: Script for running the tests.
@@ -74,14 +74,14 @@ The project structure is organized as follows:
 ### Error Testing
 
 1. **Out-of-memory Error:**
-   - Write a test case (`exercise1_test_out_of_memory.as`) containing assembly code that requests memory beyond the VM's capacity.
+   - (`exercise1_test_out_of_memory.as`) containing assembly code that requests memory beyond the VM's capacity.
 
 2. **Expected Output:**
    - The expected output for the out-of-memory test is provided in `exercise1_test_out_of_memory.mx`.
 
 ### Instruction-not-found Error
 1. **Instruction-not-found Error:**
-   - Write a test case (`exercise1_test_instruction_not_found.mx`) for a machine code file containing an unknown instruction.
+   - (`exercise1_test_instruction_not_found.mx`) containing an unknown instruction.
 
 ## Test Coverage
 
