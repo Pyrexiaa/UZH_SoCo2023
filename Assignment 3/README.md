@@ -52,10 +52,10 @@ The project structure is organized as follows:
 
 - `exercise_1/`: Main exercise directory.
   - `exercise1.as`: Sample assembly program for testing the Assembler.
-  - `exercise1_assembler_output.mx`: Expected machine code output for the sample assembly program.
+  - `exercise1_assembler_output.mx`: Assembly code output for the sample assembly program.
   - `exercise1_expected_output.mx`: Expected output for the Virtual Machine when executing the sample program.
   - `exercise1_expected_vm_output.txt`: Expected output for the Virtual Machine.
-  - `exercise1_test_instruction_not_found.mx`: ？？？
+  - `exercise1_test_instruction_not_found.mx`: Assembly code output that contains operation code that is not included in the program.
   - `exercise1_test_out_of_memory.as`: Test case for an out-of-memory scenario.
   - `exercise1_test_out_of_memory.mx`: Expected output for the out-of-memory test.
   - `test_run_script.py`: Script for running the tests.
