@@ -85,9 +85,22 @@ The project structure is organized as follows:
 
 ## Test Coverage
 
+The test coverage for this project is measured using `pytest-cov`. To reproduce the coverage report, follow these steps:
+
 1. **Measure Test Coverage:**
-  - Use pytest and coverage to measure test coverage.
-  - The test coverage percentage will be displayed in the terminal.
+   - Use pytest and coverage to measure test coverage.
+     - Install pytest-cov:
+       ```
+       pip install pytest-cov
+       ```
+     - Run pytest with coverage:
+       ```
+       pytest --cov=<your_package_name_or_directory>
+       ```
+       Replace <your_package_name_or_directory> with the name of your package or the directory containing your code.
+   - The test coverage percentage will be displayed in the terminal.
+
+
 
 # Exercise 2: Disassembler
 
